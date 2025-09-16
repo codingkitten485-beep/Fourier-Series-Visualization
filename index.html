@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourier Series Signal Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-app-container">
+        <div class="grid-container">
+            <h1>Fourier Series Visualizer</h1>
+            
+            <div class="generator-controls">
+                <h2>Add Frequencies</h2>
+                <div class="scrollable-controls">
+                    <div id="frequency-inputs">
+                    </div>
+                </div>
+                <button id="add-frequency-btn" class="add-btn">Add Frequency</button>
+                <button id="generate-btn" class="generate-btn">Generate Signal</button>
+            </div>
+
+            <div class="canvas-container">
+                <div class="scrollable-plot-container">
+                    <canvas id="fPlot"></canvas>
+                </div>
+            </div>
+            
+            <div class="epicycle-container">
+                <canvas id="timeGraph"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
